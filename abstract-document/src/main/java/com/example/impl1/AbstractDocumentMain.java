@@ -15,10 +15,10 @@ public class AbstractDocumentMain {
         var doorProperties = Map.of(
                 Property.TYPE.toString(), "door",
                 Property.MODEL.toString(), "Lambo",
-                Property.PRICE.toString(), "300L");
+                Property.PRICE.toString(), 300L);
         var carProperties = Map.of(
                 Property.MODEL.toString(), "Lambo",
-                Property.PRICE.toString(), "300L",
+                Property.PRICE.toString(), 500L,
                 Property.PARTS.toString(), List.of(wheelProperties, doorProperties));
         var car = new Car(carProperties);
         System.out.println(car.getModel().orElseThrow());
