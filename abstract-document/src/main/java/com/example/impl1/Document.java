@@ -1,4 +1,4 @@
-package com.example.impl1.documents;
+package com.example.impl1;
 
 import java.util.Map;
 import java.util.function.Function;

@@ -1,9 +1,6 @@
-package com.example.impl1.interfaces;
+package com.example.impl1;
 
 import java.util.Optional;
-
-import com.example.impl1.documents.Document;
-import com.example.impl1.models.Property;
 
 public interface HasPrice extends Document {
   default Optional<Number> getPrice() {

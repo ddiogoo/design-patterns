@@ -1,4 +1,4 @@
-package com.example.impl1.models;
+package com.example.impl1;
 
 public enum Property {
   PARTS, TYPE, PRICE, MODEL

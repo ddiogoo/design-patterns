@@ -1,10 +1,6 @@
-package com.example.impl1.interfaces;
+package com.example.impl1;
 
 import java.util.stream.Stream;
-
-import com.example.impl1.documents.Document;
-import com.example.impl1.models.Part;
-import com.example.impl1.models.Property;
 
 public interface HasParts extends Document {
   default Stream<Part> getParts() {
