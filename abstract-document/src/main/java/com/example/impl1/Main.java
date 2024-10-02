@@ -1,5 +1,7 @@
 package com.example.impl1;
 
+import com.example.impl1.enums.Property;
+import com.example.impl1.models.Car;
 import java.util.List;
 import java.util.Map;
 

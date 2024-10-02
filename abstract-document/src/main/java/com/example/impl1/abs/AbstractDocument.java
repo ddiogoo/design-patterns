@@ -1,11 +1,14 @@
-package com.example.impl1;
+package com.example.impl1.abs;
 
+import com.example.impl1.Document;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Stream;
+
+
 
 public abstract class AbstractDocument implements Document {
   private final Map<String, Object> properties;
@@ -29,11 +32,11 @@ public abstract class AbstractDocument implements Document {
   @Override
   public <T> Stream<T> children(String key, Function<Map<String, Object>, T> constructor) {
     return Stream.ofNullable(get(key))
-        .filter(Objects::nonNull)
-        .map(i -> (List<Map<String, Object>>) i)
-        .findAny()
-        .stream()
-        .flatMap(Collection::stream)
-        .map(constructor);
+      .filter(Objects::nonNull)
+      .map(i -> (List<Map<String, Object>>) i)
+      .findAny()
+      .stream()
+      .flatMap(Collection::stream)
+      .map(constructor);
   }
 }

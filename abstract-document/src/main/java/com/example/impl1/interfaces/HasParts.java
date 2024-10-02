@@ -1,5 +1,8 @@
-package com.example.impl1;
+package com.example.impl1.interfaces;
 
+import com.example.impl1.Document;
+import com.example.impl1.enums.Property;
+import com.example.impl1.models.Part;
 import java.util.stream.Stream;
 
 public interface HasParts extends Document {
